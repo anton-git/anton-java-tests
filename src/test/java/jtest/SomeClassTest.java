@@ -1,18 +1,15 @@
 package jtest;
 
 
-import org.hamcrest.MatcherAssert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
-import static org.hamcrest.CoreMatchers.*;
-
 /**
- * Created with IntelliJ IDEA.
  * User: Anton
  * Date: 21/09/13
  * Time: 21:32

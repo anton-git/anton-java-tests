@@ -1,1 +1,3 @@
-This file was created by IntelliJ IDEA 12.0 for binding GitHub repository
+Project for testing different java features.
+
+It is better to create a separate package with a descriptive name for a feature to test.
