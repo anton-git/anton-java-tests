@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="person"
+          name="person"
+          class="spring.model.Person">
+        <constructor-arg  value="A"/>
+        <constructor-arg  value="20"/>
+    </bean>
+
+    <bean id="pet"
+          name="pet"
+          class="spring.model.Pet"/>
+
+    <bean id="car1"
+          name="carName1"
+          class="spring.model.Car"
+          lazy-init="true"
+    />
+
+    <bean id="car2"
+          name="carName2"
+          class="spring.model.Car"
+          lazy-init="true"
+    >
+        <constructor-arg value="BMW"/>
+    </bean>
+
+    <bean id="car3"
+          name="carName3"
+          class="spring.model.Car"
+          lazy-init="true"
+    >
+        <property name="make" value="FORD"/>
+    </bean>
+
+    <bean id="car4"
+          name="carName4"
+          class="spring.model.Car"
+          factory-method="getInstance"
+          lazy-init="true"
+    />
+
+<!--    <bean id="car5"
+          name="carName5"
+          class="spring.model.Car"
+          factory-method="of"
+          lazy-init="true"
+    >
+
+        <property name="make" value="Opel"/>
+    </bean>-->
+
+
+</beans>
